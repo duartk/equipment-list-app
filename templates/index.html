@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+
+<a class="btn btn-primary" href="{{ url_for('idu') }}">IDU's</a>
+<a class="btn btn-primary" href="{{ url_for('odu') }}">ODU's</a>
+<a class="btn btn-primary" href="{{ url_for('sfp') }}">SFP's</a>
+<a class="btn btn-primary" href="{{ url_for('module') }}">MODULE's</a>
+
+<div class="page-header">
+    <h2>Manuais</h2>
+</div>
+
+<div>
+    <p>Para download dos manuais acessar o seguinte link.</p>
+    <ul>
+    <li><p><a href="https://drive.smbr.net.br/owncloud" target="_blank">https://drive.smbr.net.br/owncloud</a></p></li>
+    <li><p>login: Eng-Siae</p></li>
+    <li><p>senha: siaemicr</p></li>
+    </ul>
+</div>
+
+{% endblock %}
