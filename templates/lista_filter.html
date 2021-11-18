@@ -13,7 +13,7 @@
                 {% if table == 'idu' %}
                 <th>Config</th>
                 {% endif %}
-                {% if table in ['odu', 'coupler', 'polekit'] %}
+                {% if table in ['odu', 'coupler', 'polekit', 'obu'] %}
                 <th>Freq</th>
                 {% endif %}
                 {% if table == 'odu' %}
@@ -29,7 +29,7 @@
                 {% if table == 'idu' %}
                 <th>Config</th>
                 {% endif %}
-                {% if table in ['odu', 'coupler', 'polekit'] %}
+                {% if table in ['odu', 'coupler', 'polekit', 'obu'] %}
                 <th>Freq</th>
                 {% endif %}
                 {% if table == 'odu' %}
@@ -48,7 +48,7 @@
                             {% if table == 'idu' %}
                             <td>{{ eqp.config }}</td>
                             {% endif %}
-                            {% if table in ['odu', 'coupler', 'polekit'] %}
+                            {% if table in ['odu', 'coupler', 'polekit', 'obu'] %}
                             <td>{{ eqp.freq }}</td>
                             {% endif %}
                             {% if table == 'odu' %}
