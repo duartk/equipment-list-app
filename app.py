@@ -67,8 +67,14 @@ def coupler():
 def polekit():
     table = 'polekit'
     lista = Equipment.query.filter_by(family='POLE KIT').all()
-    return render_template('lista_filter.html', titulo="POLE KIT's", lista=lista, table=table)
+    return render_template('lista_filter.html', titulo="POLE KIT's", lista=lista, table=table)@app.route('/polekit')
+
+@app.route('/obu')
+def obu():
+    table = 'obu'
+    lista = Equipment.query.filter_by(family='OBU').all()
+    return render_template('lista_filter.html', titulo="OBU's", lista=lista, table=table)
 
 
 if __name__ == '__main__':
-    app.run(port=5006, debug=True)
+    app.run(port=5004, debug=True)
