@@ -1,26 +1,126 @@
 {% extends "template.html" %}
 {% block conteudo %}
 
+<div class="container">
+ <div class="row">
+  <div class="col">
+   <div class="card shadow bg-body rounded" style="height: 11rem;">
+    <div class="card-body">
+     <h5 class="card-title">IDU's</h5>
+     <p class="card-text">
+      Veja aqui a lista de <code>IDU's</code>.
+     </p><br>
+     <a href="{{ url_for('idu') }}"
+      class="btn btn-primary">
+      Vá para Lista
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="col">
+   <div class="card shadow bg-body rounded" style="height: 11rem;">
+    <div class="card-body">
+     <h5 class="card-title">ODU's</h5>
+     <p class="card-text">
+      Veja aqui a lista de <code>ODU's</code>.
+     </p><br>
+     <a href="{{ url_for('odu') }}"
+      class="btn btn-primary">
+      Vá para Lista
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="col">
+   <div class="card shadow bg-body rounded" style="height: 11rem;">
+    <div class="card-body">
+     <h5 class="card-title">Modulos AGS20L</h5>
+     <p class="card-text">
+      Veja aqui a lista de <code>módulos</code> disponíveis para <code>AGS20L</code>.
+     </p><br>
+     <a href="{{ url_for('module') }}"
+      class="btn btn-primary">
+      Vá para Lista
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="col">
+   <div class="card shadow bg-body rounded" style="height: 11rem;">
+    <div class="card-body">
+     <h5 class="card-title">SFP's</h5>
+     <p class="card-text">
+      Veja aqui a lista de <code>SFP's</code>.
+     </p><br>
+     <a href="{{ url_for('sfp') }}"
+      class="btn btn-primary">
+      Vá para Lista
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <br>
+ <div class="row">
+  <div class="col">
+   <div class="card shadow bg-body rounded" style="height: 11rem;">
+    <div class="card-body">
+     <h5 class="card-title">COUPLER's</h5>
+     <p class="card-text">
+      Veja aqui a lista de <code>Coupler's</code>.
+     </p><br>
+     <a href="{{ url_for('coupler') }}"
+      class="btn btn-primary">
+      Vá para Lista
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="col">
+   <div class="card shadow bg-body rounded" style="height: 11rem;">
+    <div class="card-body">
+     <h5 class="card-title">POLE KIT's</h5>
+     <p class="card-text">
+      Veja aqui a lista de <code>POLE KIT's</code>.
+     </p><br>
+     <a href="{{ url_for('polekit') }}"
+      class="btn btn-primary">
+      Vá para Lista
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="col">
+   <div class="card shadow bg-body rounded" style="height: 11rem;">
+    <div class="card-body">
+     <h5 class="card-title">OBU's</h5>
+     <p class="card-text">
+      Veja aqui a lista de <code>OBU's</code>.
+     </p><br>
+     <a href="{{ url_for('obu') }}"
+      class="btn btn-primary">
+      Vá para Lista
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="col">
+   <div class="card shadow bg-body rounded" style="height: 11rem;">
+    <div class="card-body">
+     <h5 class="card-title">Download de Manuais</h5>
+     <p class="card-text">
+      Faça aqui o Download dos <code>Manuais</code> de equipamentos.
+      login: Eng-Siae / senha: siaemicr
+     </p>
+     <a href="https://drive.smbr.net.br/owncloud" methods="POST" target="_blank"
+      class="btn btn-primary">
+      Vá para o Link
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
 
-<a class="btn btn-primary" href="{{ url_for('idu') }}">IDU's</a>
-<a class="btn btn-primary" href="{{ url_for('odu') }}">ODU's</a>
-<a class="btn btn-primary" href="{{ url_for('sfp') }}">SFP's</a>
-<a class="btn btn-primary" href="{{ url_for('module') }}">AGS20L MODULE's</a>
-<a class="btn btn-primary" href="{{ url_for('coupler') }}">COUPLER's</a>
-<a class="btn btn-primary" href="{{ url_for('polekit') }}">POLE KIT's</a>
-<a class="btn btn-primary" href="{{ url_for('obu') }}">OBU's</a>
-
-<div class="page-header">
-    <h2>Manuais</h2>
-</div>
-
-<div>
-    <p>Para download dos manuais acessar o seguinte link.</p>
-    <ul>
-    <li><p><a href="https://drive.smbr.net.br/owncloud" target="_blank">https://drive.smbr.net.br/owncloud</a></p></li>
-    <li><p>login: Eng-Siae</p></li>
-    <li><p>senha: siaemicr</p></li>
-    </ul>
 </div>
 
 {% endblock %}
